@@ -16,6 +16,10 @@ function sticky_header_handler() {
 
 function change_slider_height(){
 		let sliderBox = document.getElementById("sliderBox");
+		// console.log(sliderBox)
+		if(sliderBox === null){
+			return false;
+		}
 		sliderBoxOffsetTop = sliderBox.offsetTop
 		sliderBoxHeight = (window.innerHeight - sliderBoxOffsetTop) + "px" 
 		sliderBox.style.height = sliderBoxHeight	

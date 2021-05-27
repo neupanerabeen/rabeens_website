@@ -114,6 +114,17 @@
 	text-align: right;
 }
 
+#navBar a{
+	text-decoration:none;
+	transition: 0.5s;
+	padding:5px 15px;
+}
+
+#navBar a:hover{
+	color:#fff;
+	background: #0073ba;
+	/*font-weight: bold;*/
+}
 
 
 /*
@@ -246,5 +257,43 @@ body
 	text-align: center;
 	border-top:1px solid #aaa;
 	font-weight: bold;
+}
+
+
+
+.pageTitle{
+	color:#0073ba;
+	font-weight: bolder;
+	font-size: 1.5em;
+	text-align: center;
+	padding:10px;
+
+}
+
+
+
+
+
+
+
+
+
+/*Training*/
+
+.trainingHeader{
+	background:#0073ba;
+	color:#fff; 
+	display: flex;	
+}
+
+h2.trainingTitle {
+	flex:10;
+	font-size: 1.3em;
+	font-weight: bold;
+	padding: 10px 5px;
+}
+
+.trainingTitle .viewDetails{
+	/*flex:2;*/
 }
 
