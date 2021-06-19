@@ -1,7 +1,7 @@
 <div class="container-fluid">
-	<div class = "row box" id="contactBox">
+	<div class = "row box shadeBox" id="contactBox">
 		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
-			<div>
+			<!-- <div>
 				<a href="https://rabeens.wordpress.com/2020/11/28/project-planning/" target="new" class="">
 					Project Planning
 				</a>
@@ -14,7 +14,7 @@
 				<a href="" target="new" class="">
 					Blogs
 				</a>
-			</div>
+			</div> -->
 
 		</div>
 		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
@@ -31,7 +31,7 @@
 				<div class="form-group">
 					<label for = "email_txt">Email</label>
 					<input class="form-control" type="email" id="email_txt" placeholder = "Email"/>
-					<small id="emailHelp" class="form-text text-muted">
+					<small id="emailHelp" class="form-text">
 						We'll never share your email with anyone else!
 					</small>
 				</div>
