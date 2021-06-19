@@ -1,6 +1,6 @@
 	<?php 
 		require 'includes/header.php';
-		require 'includes/topbar.php';
+		// require 'includes/topbar.php';
 		require 'includes/menuBar.php';
 	?>
 

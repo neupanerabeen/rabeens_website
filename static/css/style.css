@@ -2,30 +2,139 @@
 
 *{
 	font-family: 'Sans-Serif';
-	/*transition: :0.5s;*/
-	/*color:#331;*/
-	/*color:#535d5d;*/
+	transition: 0.3s;
+}
+
+body{
+	scroll-behavior: smooth;
 }
 
 
 #topBar{
-	color: #fff;
+	padding: 0rem 0rem 3rem 0rem;
 	background-color: #0073ba;
-	padding-top:2px;
-	padding-bottom:4px;
-	font-size: 0.9em;
+	/*background-color: rgba(0,0,0,0.2);*/
+	width: 100%;
+	min-height:100vh;
+	overflow-y: scroll;
+	overflow: hidden;
+	border-top:1px solid #0073ba;
 }
 
 #topBar a{
 	text-decoration: none;
 	color:#fff;
 	transition: 0.5s;
-	font-weight: bold;
-	display: inline-block;
+	/*font-weight: bold;*/
+	/*display: inline-block;*/
 }
 
 #topBar a:hover{
 	color:#fff;
+}
+
+/*#topBar .roll_to_site{
+	position: relative;
+	width:3em;
+	height:3em;
+	bottom: 1em;
+	right:1em;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	color:#fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	animation-name: roll_to_site_animate;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+#topBar .roll_to_site:hover{
+	opacity: 1;
+	color:#fff;
+	border-color: #fff;
+	cursor: pointer;
+	border-width: 2px;
+}
+
+
+@keyframes roll_to_site_animate {
+  0%	{opacity: 1;}
+  10%	{opacity: 0.9;}
+  20%	{opacity: 0.8;}
+  30%	{opacity: 0.6;}
+  40%	{opacity: 0.4;}
+  50%	{opacity: 0.3;}
+  60%	{opacity: 0.4;}
+  70%	{opacity: 0.6;}
+  80%	{opacity: 0.8;}
+  90%	{opacity: 0.9;}
+  100%	{opacity: 1;}
+}*/
+
+#topBar #brandBox{
+	background: rgb(240,240,245);
+	text-align: center;
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+}
+#topBar #brandBox #brand-logo{
+	width:10rem;
+}
+
+#topBar #welcomeMsg{
+	color: #fff;
+}
+#topBar #welcomeMsg h2{
+	font-size: 1.2rem;
+
+}
+
+
+#topBar #welcomeMsg p{
+	padding-top:2rem;
+	text-align: center;
+}
+
+#topBar #welcomeMsg #serviceCatelogue{
+	padding-top:2rem;
+
+}
+
+#topBar #welcomeMsg #serviceCatelogue a{
+	margin:5px 10px;
+	display: inline-block;
+	/*box-shadow: 0px 0px 2px rgb(240, 148, 29);*/
+	/*box-shadow: 0px 0px 2px #0073ba;;*/
+	border:1px solid rgb(252, 142, 0);
+	padding: 15px 15px;
+	/*color:#0073ba;*/
+	color:rgb(252, 142, 0);
+	font-weight: bold;
+
+}
+
+#topBar #welcomeMsg #serviceCatelogue a:hover{
+	background: rgb(252, 142, 0);
+	color:#0073ba;
+}
+
+.textCenter{
+	text-align: center;
+}
+
+#topBar .divider{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	border: 0;
+	width: 60%;
+	min-width: 300px;
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#topBar #contactBar {
+	font-weight: bold;
+	text-align: center;
 }
 
 /*header*/
@@ -33,29 +142,21 @@
 	color:#0073ba;
 	width:100%;
 	border:none;
-	font-size: 1.4em;
+	/*font-size: 1.4em;*/
 	transition:0.3s;
-	padding-top:15px;
-	padding-bottom: 15px;
+	padding-top:0.5em;
+	padding-bottom: 0.5em;
 	z-index: 10;
-	font-weight: bold;
-	box-shadow: 0px;
-	/*position: absolute;*/
-	background:rgba(250,250,250, 0.9);
+	/*font-weight: bold;*/
+	/*box-shadow: 0px;*/
+	box-shadow: 0px 1px 8px #aaa;
+	/*background:rgba(250,250,250, 0.9);*/
+	background: #fff;
+	position: sticky;
+	top:0;
 }
 
-.sticky_header{
-	position: fixed !important;
-	top: 0;
-	font-size: 1.2em !important;
-	padding-top:5px !important;
-	padding-bottom: 5px !important;
-	width: 100%;
-	background:rgba(250,250,250, 0.8);
-	/*height:60px !important;*/
-	box-shadow: 0px 2px 3px #b5b5ce;
-}
-#brand{
+#header #brand{
 	font-family: "ITC Bauhaus", "Sans Serif";
 	font-size: 2em;
 	line-height:0.1;
@@ -63,30 +164,27 @@
 	/*top:0;*/
 }
 
-#brand-logo-wrapper {
+#header #brand-logo-wrapper {
 	width:120px;
 	overflow: hidden;
 
 }
-#brand #brand-logo{
+#header #brand #brand-logo{
 	width:100%;
-	/*height:100%;*/
 }
 
 
 
 #navBar{
-	/*text-align: right;*/
 	display:flex;
+	/*justify-content: right;*/
 	justify-content: space-between;
 	color:#0073ba;
-	transition: :0.5s ease;
-	font-weight: 500;
-	/*position: sticky;*/
-	/*top:0;*/
+	font-size: 1.2em;
+	transition: :0s ease;
 }
 
-#navBarSmall{
+/*#navBarSmall{
 	position: fixed;
 	top:0;
 	left:0;
@@ -96,14 +194,15 @@
 	color:#ccc;
 	z-index: 100;
 	overflow: hidden;
-	font-size: 1em !important;
 	display:none;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
-
+*/
 
 
 #navBar span:hover{
-	font-size: 1em;
+	/*font-size: 0/em;*/
 	color:#00004f;
 	display: inline-block;
 
@@ -112,18 +211,37 @@
 
 .toggleNavBar{
 	text-align: right;
+	width:100%;
 }
 
 #navBar a{
 	text-decoration:none;
 	transition: 0.5s;
 	padding:5px 15px;
+	/*font-weight: bold;*/
 }
 
-#navBar a:hover{
+/*#navBar a:hover{
 	color:#fff;
 	background: #0073ba;
 	/*font-weight: bold;*/
+}*/
+#navBar a:visited, #navBar a:active, #navBar a:link{
+	background:#fff;
+	color: #0073ba;
+	/*font-weight: bold;*/
+}
+
+#navBarMini a{
+	color:#fff;
+	text-decoration: none;
+	font-size:1.2em;
+	font-weight: bold;
+	justify-content: right;
+}
+
+#navBarMini a:hover{
+	text-decoration: underline;
 }
 
 
@@ -143,34 +261,12 @@ body
 
 
 .shadeBox{
-	background:#f0f0f1;
-	border-top:1px solid #ddf;
-	border-bottom:1px solid #ddf;
+	/*background:#f0f0f1;*/
+	background: rgba(247, 247, 245, 1)
+	/*background:#f0f3f2;*/
+	/*border-top:1px solid #ddf;*/
+	/*border-bottom:1px solid #ddf;*/
 }
-
-
-#sliderBox{
-	/*height:500px;*/
-	overflow: hidden;
-}
-
-.carousel-inner{
-	text-align: center;
-}
-.carousel-caption{
-	background:rgba(150,150,250,1);
-	color:#0073ba;
-}
-
-.carousel{
-	z-index: 2;
-
-}
-
-/*.carousel .carouselImg{
-	height: 100%;
-}*/
-
 
 
 
@@ -203,8 +299,13 @@ body
 	font-size: 1.3em;
 	font-weight: bolder;
 	color:#0073ba;
-	border-bottom: 1px solid #ddf;
+	/*border-bottom: 1px solid #ddf;*/
 }
+
+#assetsBox img{
+	padding: 0% 35%;
+}
+
 
 
 #servicesBox .serviceCard{
@@ -214,6 +315,7 @@ body
 
 #servicesBox ul.serviceList{
 	color:#535d5d;
+
 }
 
 
@@ -227,7 +329,9 @@ body
 
 /*contactBox*/
 #contactBox{
-
+	/*background: #0073ba;*/
+	background: rgb(213, 235, 247);
+	color:#fff;
 }
 
 #contactBox .contactBoxDetails{

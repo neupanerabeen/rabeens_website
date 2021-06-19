@@ -7,7 +7,14 @@
 	<div id="body">
 		<div class="container-fluid">
 
-			<div class = "row d-none d-md-block">
+		<div class="row box shadeBox">
+			<div class="col-12">
+				<h1></h1>
+			</div>
+		</div>
+
+
+<!-- 			<div class = "row d-none d-md-block">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<div  id="sliderBox">
 
@@ -20,24 +27,12 @@
 							<div class="carousel-inner">
 								<div class="carousel-item active">
 									<img class="" src="static/images/front_image.png" alt="Product Development">
-									<!--<div class="carousel-caption d-none d-md-block">-->
-										<!-- <h5>Product Development</h5> -->
-									<!--	<p>Lets build something cool!</p>-->
-									<!--</div>-->
 								</div>
 								<div class="carousel-item">
 									<img class="" src="static/images/front_image.png" alt="Product Development">
-									<!--<div class="carousel-caption d-none d-md-block">-->
-										<!-- <h5>Product Development</h5> -->
-									<!--	<p>Lets build something cool!</p>-->
-									<!--</div>-->
 								</div>
 								<div class="carousel-item">
 									<img class="" src="static/images/front_image.png" alt="Product Development">
-									<!--<div class="carousel-caption d-none d-md-block">-->
-										<!-- <h5>Product Development</h5> -->
-									<!--	<p>Lets build something cool!</p>-->
-									<!--</div>-->
 								</div>
 
 							</div>
@@ -54,9 +49,12 @@
 
 					 
 				</div>
-			</div>
+			</div> -->
 
 			<div class = "row box shadeBox" id="servicesBox">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+					<h3 class="title">Services</h3>
+				</div>
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
 					<div class="container-fluid">
 						<div class = "row">
@@ -143,9 +141,9 @@
 				</div>
 			</div>
 
-			<div class = "row box" id="assetsBox">
+			<div class = "row box shadeBox" id="assetsBox">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-					<h3 class="title">Our Products</h3>
+					<h3 class="title">Products</h3>
 				</div>
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
 					<div class="container-fluid">

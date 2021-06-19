@@ -1,6 +1,6 @@
 	<?php 
 		require 'includes/header.php';
-		require 'includes/topbar.php';
+		// require 'includes/topbar.php';
 		require 'includes/menuBar.php';
 	?>
 
@@ -193,6 +193,23 @@
 							<li>Popular tools for big data
 						</ul>
 
+						<li>Types of databases
+						<ul>
+							<li>Relational database
+							<li>NoSql
+							<li>Graph databases
+							<li>Key-value store
+							<li>Document based databases
+							<li>Column Oriented 
+						</ul>
+
+						<li>Kafka
+						<ul>
+							<li>Introduction
+							<li>Pub-sub architecture
+							<li>Producer, consumer, Topics, partitions
+						</ul>
+
 						<li>Hadoop ecosystem
 						<ul>
 							<li>Hdfs
@@ -210,25 +227,11 @@
 							<li>Spark ecosystem
 						</ul>
 
-						<li>Kafka
+						<li>Implementations and Use Cases
 						<ul>
-							<li>Introduction
-							<li>Pub-sub architecture
-							<li>Producer, consumer, Topics, partitions
-						</ul>
-
-						<li>Types of databases
-						<ul>
-							<li>Relational database
-							<li>NoSql
-							<li>Graph databases
-							<li>Key-value store
-							<li>Document based databases
-							<li>Column Oriented 
-						</ul>
-
-						<li>Few use cases discussion
-						<ul>
+							<li>Big Data Project Development Basics
+							<li>Big Data Project Deployment
+							<li>Use cases from idea to Deployment
 							<li>Banking Customer 360
 							<li>Cyber security anomaly detection
 						</ul>
@@ -291,7 +294,7 @@
   				</p>
   				<p>
   					<span 
-  						class="btn btn-default viewDetails" 
+  						class="btn btn-primary viewDetails" 
   						type="button" 
   						data-toggle="collapse" 
   						data-target="<?php echo $targetCollapse; ?>" 
@@ -311,6 +314,17 @@
 				  			echo "<div>".$content."</div>";
 				  		} 
 				  	?>
+				  	<span 
+  						class="btn btn-primary viewDetails" 
+  						type="button" 
+  						data-toggle="collapse" 
+  						data-target="<?php echo $targetCollapse; ?>" 
+  						aria-expanded="false" 
+  						aria-controls="collapseExample"
+  					>
+						Hide
+						<span class="fa fa-caret-up"> 
+	  				</span>
 				  <!-- </div> -->
 				 </div>
 			</div>

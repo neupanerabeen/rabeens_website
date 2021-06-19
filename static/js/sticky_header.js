@@ -1,17 +1,17 @@
 
-window.onscroll = function() {sticky_header_handler()};
+// window.onscroll = function() {sticky_header_handler()};
 
 let navbar = document.getElementById("header");
 // let sticky = navbar.offsetTop + navbar.style.height;
 let sticky = navbar.offsetTop +  navbar.offsetHeight + 0.5*navbar.offsetHeight;
 
-function sticky_header_handler() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky_header")
-  } else {
-    navbar.classList.remove("sticky_header");
-  }
-}
+// function sticky_header_handler() {
+//   if (window.pageYOffset >= sticky) {
+//     navbar.classList.add("sticky_header")
+//   } else {
+//     navbar.classList.remove("sticky_header");
+//   }
+// }
 
 
 function change_slider_height(){
@@ -51,13 +51,13 @@ let toggleNavBarEventHandler = function(){
 		_navBarMini.style.width="100%"
 		_navBarMini.style.top="0"
 		_navBarMini.style.padding="10px"
-		_navBarMini.style.background="rgba(0,0,0,0.8)"
+		_navBarMini.style.background="rgba(0,0,0,1)"
 		_navBarMini.style.color="#ccc"
+		_navBarMini.style.overflow="scroll"
+		_navBarMini.style.transition="0s"
 		let navBar_html = navbar.innerHTML.replaceAll("d-none", "").replaceAll("d-md-block", "").replaceAll("fa fa-bars", "fa fa-times").replaceAll("span", "div")
-		// console.log(navBar_html)
 		_navBarMini.innerHTML = navBar_html  
 		_navBarMini.style.zIndex = 100 
-
 		document.body.appendChild(_navBarMini);
 
 	}else{

@@ -1,5 +1,10 @@
 
 <?php
+
+// header('Content-Type: application/json');
+// header("Cache-Control: no-cache");
+// header("Pragma: no-cache");
+
 $name = trim($_POST["name"]);
 $email = trim($_POST["email"]);
 $service = trim($_POST["service"]);
